@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="task">
+      <h3>第一题</h3>
+      <Container />
+    </div>
+    <div class="task">
+      <h3>第二题</h3>
+      <IconHover />
+    </div>
+
+    <div class="task"><h3>第三题</h3></div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Container from "@/components/Container";
+import IconHover from "@/components/IconHover";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Container,
+    IconHover,
+  },
+};
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.task {
+  width: 100vw;
+  margin: 80px 0;
+}
+.task:first-child {
+  margin-top: 0;
 }
 </style>
