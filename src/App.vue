@@ -8,8 +8,6 @@
       <h3>第二题</h3>
       <IconHover />
     </div>
-
-    <div class="task"><h3>第三题</h3></div>
   </div>
 </template>
 
